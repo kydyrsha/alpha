@@ -15,19 +15,19 @@
       <h2 class="engineering-header">Проектирование</h2>
       <div class="engineering-wrapper">
         <div class="engineering-block">
-          <img src="src/assets/images/engineering/block1.png" alt="factory-icon">
+          <img src="@/assets/images/engineering/block1.png" alt="factory-icon">
           <p>Проектирование (технологическое) нефтехимических производств</p>
         </div>
         <div class="engineering-block">
-          <img src="src/assets/images/engineering/block2.png" alt="paper-icon">
+          <img src="@/assets/images/engineering/block2.png" alt="paper-icon">
           <p>Cоставление проектных документов для месторождений углеводородного сырья</p>
         </div>
         <div class="engineering-block">
-          <img src="src/assets/images/engineering/block3.png" alt="paper-icon">
+          <img src="@/assets/images/engineering/block3.png" alt="paper-icon">
           <p>Составление технико-экономического обоснования проектов для месторождений углеводородного сырья</p>
         </div>
         <div class="engineering-block">
-          <img src="src/assets/images/engineering/block4.png" alt="factory-icon">
+          <img src="@/assets/images/engineering/block4.png" alt="factory-icon">
           <p>Составление технологических регламентов для месторождений углеводородного сырья</p>
         </div>
       </div>

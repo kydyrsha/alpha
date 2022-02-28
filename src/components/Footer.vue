@@ -1,5 +1,6 @@
 <template>
   <footer>
+
   </footer>
 </template>
 
@@ -10,5 +11,7 @@ name: "Footer"
 </script>
 
 <style scoped>
-
+footer {
+  background: #33337b;
+}
 </style>

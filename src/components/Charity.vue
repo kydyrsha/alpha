@@ -35,7 +35,7 @@
             </div>
           </div>
         </div>
-        <img src="src/assets/images/dara-bg.jpg" width="100%" alt="charity  ">
+        <img src="@/assets/images/dara-bg.jpg" width="100%" alt="charity  ">
       </div>
     </div>
   </section>
