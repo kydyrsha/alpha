@@ -12,12 +12,12 @@
 <!--        </svg>-->
 <!--        </a>-->
 <!--      </div>-->
-      <a href="#" class="toggle-button">
+      <a href="#" class="toggle-button" @click="toggleMenu">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </a>
-      <ul class="menu">
+      <ul class="menu" :class="{'active': isActive}">
         <RouterLink class="menu-link" to="/">Главная</RouterLink>
         <RouterLink class="menu-link" to="/about">О нас</RouterLink>
         <RouterLink class="menu-link" to="/product">Продукция</RouterLink>
@@ -50,9 +50,16 @@
 
 <script>
 export default {
-  // data: {
-  //   isActive: false
-  // }
+  data() {
+    return {
+      isActive: false
+    }
+  },
+  methods: {
+    toggleMenu () {
+      this.isActive = !this.isActive
+    }
+  }
 }
 </script>
 <style scoped>
