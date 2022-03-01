@@ -176,15 +176,15 @@ p {
   padding-bottom: 2rem;
 }
 
-.supply .supply-wrapper:after {
-  content: '';
-  position: absolute;
-  width:40%;
-  height: 3px;
-  background-color:#33337b;
-  bottom:0;
-  right:0;
-}
+/*.supply .supply-wrapper:after {*/
+/*  content: '';*/
+/*  position: absolute;*/
+/*  width:40%;*/
+/*  height: 3px;*/
+/*  background-color:#33337b;*/
+/*  bottom:0;*/
+/*  right:0;*/
+/*}*/
 
 .supply .supply-header {
   text-align: center;
