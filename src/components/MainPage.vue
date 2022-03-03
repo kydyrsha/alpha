@@ -228,6 +228,20 @@ p {
   font-size: 3rem;
 }
 
+@media (max-width:767.98px) {
+  .facts .facts-wrapper {
+    flex-direction: column;
+  }
+
+  .advantages .advantages-wrapper .advantage {
+    width:100%;
+  }
+
+  .advantages .container {
+    padding:0;
+  }
+}
+
 .advantages {
   padding: 2rem 0;
   /*background: #002f6c;*/
@@ -295,4 +309,9 @@ p {
   height:100px;
 }
 
+@media (max-width:767.98px) {
+  .advantages .advantages-wrapper {
+    flex-direction: column;
+  }
+}
 </style>
