@@ -1,14 +1,8 @@
 /* general styles */
-@font-face {
-  font-family: "Fira Sans";
-  src: url("@/assets/fonts/FiraSans-Regular.ttf") format("opentype"),
-  url("@/assets//fonts/FiraSans-Italic.ttf") format("opentype"),
-  url("@/assets/fonts/FiraSans-Bold.ttf") format("opentype"),
-  url("@/assets/fonts/FiraSans-BoldItalic.ttf") format("opentype");
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
-  --brand-color: #33337b;
+  --brand-color: #002f6c;
 }
 
 * {
@@ -18,12 +12,12 @@
 body {
   margin:0;
   font-size: 16px;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   color:#000;
 }
 
 header {
-  background-color: #33337b;
+  background-color: #002f6c;
 }
 
 .container {
@@ -35,6 +29,10 @@ header {
 
 a {
   text-decoration: none;
+}
+
+section {
+  position: relative;
 }
 
 

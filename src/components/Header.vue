@@ -117,7 +117,7 @@ export default {
 }
 
 .navbar .menu .menu-link:hover {
-  background-color: #2e2e61;
+  opacity:0.7;
 }
 
 .navbar .navbar-links > a {

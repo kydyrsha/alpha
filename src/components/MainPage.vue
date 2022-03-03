@@ -12,34 +12,64 @@
   </section>
   <section class="engineering">
     <div class="container">
-      <h2 class="engineering-header">Проектирование</h2>
+      <h2 class="engineering-header">Комплексный подход</h2>
       <div class="engineering-wrapper">
         <div class="engineering-block">
-          <img src="@/assets/images/engineering/block1.png" alt="factory-icon">
+          <img src="@/assets/images/services/sketch.png" alt="sketch-icon">
           <p>Проектирование (технологическое) нефтехимических производств</p>
         </div>
         <div class="engineering-block">
-          <img src="@/assets/images/engineering/block2.png" alt="paper-icon">
-          <p>Cоставление проектных документов для месторождений углеводородного сырья</p>
-        </div>
-        <div class="engineering-block">
-          <img src="@/assets/images/engineering/block3.png" alt="paper-icon">
+          <img src="@/assets/images/services/block3.png" alt="paper-icon">
           <p>Составление технико-экономического обоснования проектов для месторождений углеводородного сырья</p>
         </div>
         <div class="engineering-block">
-          <img src="@/assets/images/engineering/block4.png" alt="factory-icon">
-          <p>Составление технологических регламентов для месторождений углеводородного сырья</p>
+          <img src="@/assets/images/services/tubes.png" alt="pipe-icon">
+          <p>Поставка труб различных диаметров и марок стали</p>
+        </div>
+        <div class="engineering-block">
+          <img src="@/assets/images/services/laboratory.png" alt="lab-icon">
+          <p>Поставка промышленного и технического оборудования</p>
+        </div>
+        <div class="engineering-block">
+          <img src="@/assets/images/services/corrosive.png" alt="corrosive-icon">
+          <p>Антикоррозийное покрытие</p>
+        </div>
+        <div class="engineering-block">
+          <img src="@/assets/images/services/maintenance.png" alt="lab-icon">
+          <p>Строительно-монтажные работы</p>
         </div>
       </div>
     </div>
   </section>
-  <section class="supply">
+  <section class="facts">
     <div class="container">
-      <div class="supply-wrapper">
-        <h2 class="supply-header">
-          Поставка материалов и оборудования
-        </h2>
-        <p class="supply-text">Компания «Alphamet» осуществляет поставку широкого спектра материалов и оборудования для нефтегазовой и горнодобывающей отрасли, изготовление и поставка нефтяных труб (обсадные, бурильные, НТК и другие), комплектующие детали и расходные материалы для строительства и ремонта технологических трубопроводов, конструкции для строительства переходов через преграды, изделия из полимеров и полиуретанов, металлоконструкции и другие детали трубопровода, необходимые для обустройства месторождений и строительства резервуарных парков. С основными каталогами продукции предлагаем ознакомиться в разделе продукция.</p>
+      <div class="facts-wrapper">
+        <h2 class="facts-header"><span>Более <b>10</b> контрактов</span><br>с ведущими заводами в своих отраслях</h2>
+        <img class="hs-img" src="@/assets/images/handshake.png" alt="handshake">
+      </div>
+    </div>
+  </section>
+  <section class="advantages">
+    <div class="container">
+      <h2 class="advantages-header">
+        Ваши преимущества<br>
+        <span>от работы с ТОО "Alphamet"</span></h2>
+      <div class="advantages-wrapper">
+        <div class="advantage">
+          <img src="@/assets/images/services/1.svg" alt="1">
+          <h3>Проектирование</h3>
+          <p>Осуществление полного комплекса работ в области разработки проектной документации на всех  стадиях проектирования</p>
+        </div>
+        <div class="advantage">
+          <img src="@/assets/images/services/2.svg" alt="2">
+          <h3>Поставка материалов и оборудования</h3>
+          <p>Комплексный подход от подбора строительных материалов до промышленного оборудования</p>
+        </div>
+        <div class="advantage">
+          <img src="@/assets/images/services/3.svg" alt="3">
+          <h3>Сдача объекта в эксплуатацию</h3>
+          <p>Сдача объекта в эксплуатацию</p>
+        </div>
       </div>
     </div>
   </section>
@@ -47,6 +77,13 @@
 
 
 <style scoped>
+section:after {
+  content: '';
+  position: absolute;
+  width:100%;
+  height:8px;
+  background: linear-gradient(to right, #002f6c, #2cd5c4);
+}
 
 h2 {
   font-weight: normal;
@@ -55,7 +92,7 @@ h2 {
 
 p {
   line-height: 1.5rem;
-  text-align: justify;
+  text-align: center;
 }
 
 .banner {
@@ -98,6 +135,7 @@ p {
   max-height: 520px;
   height:100%;
   object-fit: cover;
+  display:block;
 }
 
 @media (max-width:767.98px) {
@@ -114,7 +152,8 @@ p {
 .engineering .engineering-header {
   text-align: center;
   font-size: 2rem;
-  margin:2.5rem 0;
+  padding:2.5rem 0;
+  margin:0;
   letter-spacing: 1px;
   font-weight: normal;
 }
@@ -128,29 +167,18 @@ p {
 }
 
 .engineering .engineering-wrapper .engineering-block {
-  width:45%;
+  width:33%;
   display:flex;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 1.5rem;
+  flex-direction: column;
 }
 
 .engineering .engineering-wrapper .engineering-block > img {
-  width:15%;
+  width:20%;
 }
 
 .engineering .engineering-wrapper .engineering-block > p {
   width:80%;
-}
-
-
-.engineering .engineering-wrapper:after {
-  content: '';
-  position: absolute;
-  width:40%;
-  height: 3px;
-  background-color:#33337b;
-  bottom:0;
 }
 
 @media (max-width: 767.98px) {
@@ -171,30 +199,100 @@ p {
   }
 }
 
-.supply .supply-wrapper {
+.facts {
   position: relative;
+  background-color: #002f6c;
+  margin-bottom: 2rem;
+}
+
+.facts .facts-wrapper {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.facts .facts-wrapper .hs-img {
+  width:40%;
+}
+
+.facts .facts-wrapper .facts-header {
+  color:#fff;
+  text-align: center;
+  font-weight: normal;
+  margin:0;
+  width:60%;
+}
+
+.facts .facts-wrapper .facts-header > span {
+  font-size: 3rem;
+}
+
+.advantages {
+  padding: 2rem 0;
+  /*background: #002f6c;*/
+  /*margin-bottom: 2rem;*/
+}
+
+.advantages:after {
+  content: none;
+}
+
+.advantages .advantages-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.advantages .advantages-header {
+  text-align: center;
+  font-size: 3rem;
+  line-height: 2.75rem;
+  color:#000;
+  margin:0;
   padding-bottom: 2rem;
 }
 
-/*.supply .supply-wrapper:after {*/
-/*  content: '';*/
-/*  position: absolute;*/
-/*  width:40%;*/
-/*  height: 3px;*/
-/*  background-color:#33337b;*/
-/*  bottom:0;*/
-/*  right:0;*/
-/*}*/
+.advantages .advantages-header > span {
+  font-size: 2.25rem;
+}
 
-.supply .supply-header {
+.advantages .advantages-wrapper .advantage {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  color:#fff;
+  width:400px;
+  height:270px;
+  justify-content: center;
+}
+
+.advantages .advantages-wrapper .advantage > h3 {
+  font-size: 1.5rem;
+  margin:0;
   text-align: center;
-  margin-top: 2rem;
 }
 
-.supply .supply-text {
-  line-height: 1.5rem;
-  text-align: justify;
+.advantages .advantages-wrapper .advantage > p {
+  padding:1rem;
+  margin:0;
 }
 
+.advantages .advantages-wrapper .advantage:first-child {
+  background: #064499;
+}
+.advantages .advantages-wrapper .advantage:nth-child(3n-1) {
+  background: #3567b0;
+}
+
+.advantages .advantages-wrapper .advantage:last-child {
+  background: #e72120;
+}
+
+.advantages .advantages-wrapper .advantage > img {
+  width:100px;
+  height:100px;
+}
 
 </style>

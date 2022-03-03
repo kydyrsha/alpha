@@ -50,7 +50,7 @@ name: "Footer"
 
 <style scoped>
 footer {
-  background: #33337b;
+  background: #002f6c;
 }
 
 .menu {
@@ -77,7 +77,7 @@ h2 {
 }
 
 .menu .menu-link:hover {
-  background-color: #2e2e61;
+  opacity:0.7;
 }
 
 footer .footer-wrapper {
