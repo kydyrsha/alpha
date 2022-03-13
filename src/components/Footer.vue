@@ -110,5 +110,9 @@ footer .footer-wrapper {
   footer .footer-wrapper {
     flex-direction: column;
   }
+
+  h2 {
+    font-size: 2rem;
+  }
 }
 </style>

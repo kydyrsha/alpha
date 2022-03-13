@@ -35,7 +35,7 @@
             </div>
           </div>
         </div>
-        <img src="@/assets/images/dara-bg.jpg" width="100%" alt="charity  ">
+        <img class="dara-charity-img" src="@/assets/images/dara-bg.jpg" width="100%" alt="charity">
       </div>
     </div>
   </section>
@@ -66,7 +66,16 @@
 
 .charity-wrapper .dara-charity .dara-content .dara-text {
   text-align: justify;
+  line-height: 1.5rem;
 }
+
+.dara-charity-img {
+  display:block;
+  width:100%;
+  margin-bottom: 2rem;
+}
+
+
 
 @media (max-width: 767.98px) {
   .charity-wrapper .dara-charity {
@@ -76,6 +85,12 @@
 
   .charity-wrapper .dara-charity .dara-link .dara-logo {
     margin: 0;
+  }
+
+  .contacts {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 </style>

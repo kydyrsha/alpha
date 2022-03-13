@@ -144,7 +144,7 @@ p {
   }
   .banner .banner-text {
     top:10%;
-    left:7%;
+    left:5%;
   }
 
 }
@@ -175,6 +175,7 @@ p {
 
 .engineering .engineering-wrapper .engineering-block > img {
   width:20%;
+  margin-bottom: 1rem;
 }
 
 .engineering .engineering-wrapper .engineering-block > p {
@@ -313,5 +314,10 @@ p {
   .advantages .advantages-wrapper {
     flex-direction: column;
   }
+
+  .advantages .advantages-wrapper .advantage {
+    width:100%;
+  }
+
 }
 </style>

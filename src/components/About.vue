@@ -40,6 +40,17 @@
             промышленных компаний, налажено производство труб с антикоррозийным и теплогидроизоляционными
             покрытиями.</p>
         </div>
+        <div class="timeline">
+          <h3 class="timeline-header">2022 год</h3>
+          <p class="timeline-text">ТОО "Alphamet" прошла проверку системы менеджмента качества и получила сертификаты
+          <ul>
+            <li><b>ISO 9001</b> – Системы менеджмента качества</li>
+            <li><b>ISO 45001</b> – Система менеджмента охраны здоровья и
+              безопасности труда</li>
+            <li><b>ISO 14001</b> – Система экологического менеджмента</li>
+          </ul>
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -49,33 +60,35 @@
 <style scoped>
 
 p {
-  margin:0;
+  margin: 0;
   line-height: 1.4rem;
 }
 
 .about-us-title {
   text-align: center;
-  margin:2rem auto;
-  width:100%;
-  max-width:80%;
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 80%;
   font-weight: normal;
   font-size: 2rem;
 }
+
 .timeline-wrapper {
   position: relative;
-  width:100%;
-  max-width:90%;
+  width: 100%;
+  max-width: 90%;
   margin: 0 auto;
 }
+
 .timeline-wrapper:after {
   content: '';
-  background:#33337b;
-  width:3px;
+  background: #33337b;
+  width: 3px;
   height: 3px;
   position: absolute;
-  top:0;
-  left:-50px;
-  height:100%;
+  top: 0;
+  left: -50px;
+  height: 100%;
 }
 
 .timeline-wrapper .timeline {
@@ -84,26 +97,27 @@ p {
 }
 
 .timeline-wrapper .timeline:last-child {
-  border:none;
+  border: none;
 }
 
 .timeline-wrapper .timeline .timeline-header {
   margin-bottom: 0.5rem;
 }
 
-@media (max-width:767.98px) {
+@media (max-width: 767.98px) {
   .about-us-title {
     max-width: 80%;
     font-size: 1.5rem;
   }
+
   .timeline-wrapper:after {
-    width:100%;
-    height:3px;
-    left:0;
+    width: 100%;
+    height: 3px;
+    left: 0;
   }
 
   .timeline-wrapper .timeline:first-child {
-    padding-top:1.5rem;
+    padding-top: 1.5rem;
   }
 
 }
