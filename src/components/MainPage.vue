@@ -1,15 +1,4 @@
 <template>
-  <section class="banner">
-    <div class="banner-bg">
-      <video class="alphamet-intro" autoplay loop muted playsinline>
-        <source src="@/assets/video/alphamet.mp4" type="video/mp4" />
-      </video>
-    </div>
-    <div class="banner-text">
-      <h1 class="title">Компания Alphamet</h1>
-      <h2 class="sub-title">Комплексные решения для нефтехимической<Br/>и горнодобывающей отрасли</h2>
-    </div>
-  </section>
   <section class="engineering">
     <div class="container">
       <h2 class="engineering-header">Комплексный подход</h2>
@@ -189,6 +178,7 @@ p {
 
   .engineering .engineering-wrapper .engineering-block {
     width:100%;
+    margin-bottom: 3rem;
   }
 
   .engineering .engineering-wrapper .engineering-block > img {
@@ -317,6 +307,16 @@ p {
 
   .advantages .advantages-wrapper .advantage {
     width:100%;
+  }
+
+  .advantages .advantages-header {
+    font-size: 2.5rem;
+    padding:0.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .facts {
+    margin-bottom: 0;
   }
 
 }

@@ -89,4 +89,27 @@ p {
 /*.container {*/
 /*  height:calc(100vh - 54px);*/
 /*}*/
+
+@media (max-width:767.98px) {
+  .contacts-wrapper {
+    flex-direction: column;
+  }
+
+  .contacts-wrapper .contacts {
+    width:100%;
+  }
+
+  .contacts-wrapper .map-wrapper {
+    width:100%;
+  }
+
+  .contacts-wrapper .map-wrapper > h2 {
+    display:none;
+  }
+
+  .contacts-wrapper .map-wrapper #map {
+    width:100% !important;
+  }
+
+}
 </style>
