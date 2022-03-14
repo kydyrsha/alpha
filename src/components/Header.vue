@@ -273,7 +273,6 @@ header .alphamet-intro {
 
   .navbar .menu.active {
     display: flex;
-    height: calc(100vh - 80px);
   }
 
   .navbar .navbar-links {

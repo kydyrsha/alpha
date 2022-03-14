@@ -78,6 +78,7 @@ p {
   width: 100%;
   max-width: 90%;
   margin: 0 auto;
+  margin-bottom: 2rem;
 }
 
 .timeline-wrapper:after {
