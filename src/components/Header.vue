@@ -5,7 +5,7 @@
         <source src="@/assets/video/alphamet.mp4" type="video/mp4" />
       </video>
       <div class="banner-text">
-        <h1 class="title">Компания Alphamet</h1>
+        <h2 class="title">Компания Alphamet</h2>
         <h2 class="sub-title">Комплексные решения для нефтехимической<Br/>и горнодобывающей отрасли</h2>
       </div>
     </div>
