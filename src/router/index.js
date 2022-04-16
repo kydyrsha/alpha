@@ -50,7 +50,7 @@ const router = createRouter({
       component: () => import('../views/PageNotFoundView.vue')
     },
     {
-      path: '',
+      path: '*',
       redirect: '/404'
     }
   ]
