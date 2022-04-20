@@ -61,7 +61,6 @@
 
 p {
   margin: 0;
-  line-height: 1.4rem;
 }
 
 .about-us-title {
@@ -94,7 +93,7 @@ p {
 
 .timeline-wrapper .timeline {
   padding-bottom: 1.5rem;
-  border-bottom: #33337b dashed 2px;
+  border-bottom: var(--brand-blue) dashed 2px;
 }
 
 .timeline-wrapper .timeline:last-child {

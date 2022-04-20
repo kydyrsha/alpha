@@ -182,16 +182,11 @@
 
 <style scoped>
 
-h2 {
-  font-weight: normal;
-  font-size: 2rem;
-}
-
 .catalog-link {
   display:flex;
   align-items: center;
   margin-left: 1rem;
-  color:#000;
+  color:var(--brand-black);
   transition: 0.6s;
 }
 
@@ -234,12 +229,6 @@ h2 {
   .product-title-wrapper {
     flex-direction: column;
     margin-bottom: 2rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-    text-align: center;
-    line-height: 2.25rem;
   }
 }
 </style>

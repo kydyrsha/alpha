@@ -34,7 +34,7 @@
             </div>
           </div>
         </div>
-        <img class="dara-charity-img" src="@/assets/images/dara-bg.jpg" width="100%" alt="charity">
+        <img class="dara-charity-img" src="@/assets/images/dara-bg.jpg" width="100%" alt="charity" title="Dara charity">
       </div>
     </div>
   </section>
@@ -65,7 +65,6 @@
 
 .charity-wrapper .dara-charity .dara-content .dara-text {
   text-align: justify;
-  line-height: 1.5rem;
 }
 
 .dara-charity-img {

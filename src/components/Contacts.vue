@@ -40,15 +40,6 @@ DG.then(function () {
   });
 });
 
-// const map = new mapgl.Map('map', {
-//   center: [55.31878, 25.23584],
-//   zoom: 13,
-//   key: 'Your API access key',
-// });
-//
-// const marker = new mapgl.Marker(map, {
-//   coordinates: [76.930465, 43.221919],
-// });
 </script>
 <style scoped>
 
@@ -56,16 +47,7 @@ DG.then(function () {
   width:800px;
   height:600px;
 }
-h2 {
-  line-height: 2rem;
-  font-size: 2.5rem;
-  font-weight: normal;
-}
 
-p {
-  line-height: 1.75rem;
-  font-size: 1.25rem;
-}
 
 .navbar-links > a {
   text-decoration: none;
@@ -101,9 +83,6 @@ p {
   width:30%;
 }
 
-/*.container {*/
-/*  height:calc(100vh - 54px);*/
-/*}*/
 
 @media (max-width:767.98px) {
   .contacts-wrapper {

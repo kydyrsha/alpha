@@ -35,7 +35,7 @@
 }
 
 .no-page-wrapper > h2 > span {
-  color:#002f6c;
+  color:var(--brand-black);
   font-size: 5rem;
 }
 </style>

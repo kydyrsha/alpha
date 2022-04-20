@@ -1,14 +1,5 @@
 <template>
-  <header>
-    <div class="banner-bg">
-      <video class="alphamet-intro" autoplay loop muted playsinline>
-        <source src="@/assets/video/alphamet.mp4" type="video/mp4" />
-      </video>
-      <div class="banner-text">
-        <h2 class="title">Компания Alphamet</h2>
-        <h2 class="sub-title">Комплексные решения для нефтехимической<Br/>и горнодобывающей отрасли</h2>
-      </div>
-    </div>
+  <header class="main-header">
     <nav class="navbar">
       <RouterLink class="logo-link" to="/"><img class="navbar-logo" src="@/assets/images/alphamet-transparent.png"
                                                 alt="logo"></RouterLink>
@@ -25,35 +16,7 @@
         <RouterLink class="menu-link" to="/contacts">Контакты</RouterLink>
       </ul>
       <div class="navbar-links">
-        <div class="phones">
-          <a class="phone" href="tel:+77273470224">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
-              <path fill="none" d="M0 0h24v24H0z"/>
-              <path
-                  d="M21 16.42v3.536a1 1 0 0 1-.93.998c-.437.03-.794.046-1.07.046-8.837 0-16-7.163-16-16 0-.276.015-.633.046-1.07A1 1 0 0 1 4.044 3H7.58a.5.5 0 0 1 .498.45c.023.23.044.413.064.552A13.901 13.901 0 0 0 9.35 8.003c.095.2.033.439-.147.567l-2.158 1.542a13.047 13.047 0 0 0 6.844 6.844l1.54-2.154a.462.462 0 0 1 .573-.149 13.901 13.901 0 0 0 4 1.205c.139.02.322.042.55.064a.5.5 0 0 1 .449.498z"
-                  fill="rgba(255,255,255,1)"/>
-            </svg>
-            +7-727-347-02-24
-          </a>
-          <a class="phone" href="tel:+77006055555">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
-              <path fill="none" d="M0 0h24v24H0z"/>
-              <path
-                  d="M21 16.42v3.536a1 1 0 0 1-.93.998c-.437.03-.794.046-1.07.046-8.837 0-16-7.163-16-16 0-.276.015-.633.046-1.07A1 1 0 0 1 4.044 3H7.58a.5.5 0 0 1 .498.45c.023.23.044.413.064.552A13.901 13.901 0 0 0 9.35 8.003c.095.2.033.439-.147.567l-2.158 1.542a13.047 13.047 0 0 0 6.844 6.844l1.54-2.154a.462.462 0 0 1 .573-.149 13.901 13.901 0 0 0 4 1.205c.139.02.322.042.55.064a.5.5 0 0 1 .449.498z"
-                  fill="rgba(255,255,255,1)"/>
-            </svg>
-            +7-700-605-55-55
-          </a>
-        </div>
-        <a class="email" href="mailto:info@alphamet.kz">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
-            <path fill="none" d="M0 0h24v24H0z"/>
-            <path
-                d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm17 4.238l-7.928 7.1L4 7.216V19h16V7.238zM4.511 5l7.55 6.662L19.502 5H4.511z"
-                fill="rgba(255,255,255,1)"/>
-          </svg>
-          info@alphamet.kz
-        </a>
+        <a class="menu-link active" href="#">перезвоните мне</a>
       </div>
     </nav>
 
@@ -75,74 +38,134 @@ export default {
 }
 </script>
 <style scoped>
-header {
-  position: relative;
-  height:100vh;
-  max-height:500px;
+header .menu-link {
+  color: var(--brand-white);
+  transition: 0.6s;
+  display: flex;
+  text-decoration: none;
+  padding: 0.5rem 1.25rem;
 }
 
-.banner-bg::after {
-  content: '';
-  position: absolute;
-  width:100%;
-  height:100%;
-  max-height: 500px;
-  background-color: rgba(0, 0, 0, 0.3);
-  top:0;
-  right: 0;
-  z-index: 3;
+header .menu-link:hover {
+  background: rgba(238, 75, 43, 0.9);
+  border-radius: 1.25rem;
 }
 
-.banner-text {
-  position: absolute;
-  top:30%;
-  left:22%;
-  color:#fff;
-  z-index: 5;
+header .menu-link.active:hover {
+  color: var(--brand-white);
+  background: rgba(238, 75, 43, 0.9);
+  border-radius: 1.25rem;
+  animation: none;
 }
 
-.banner-text .title {
-  font-size: 2.5rem;
-  letter-spacing: 0.1rem;
-  margin:0.5rem 0;
+header .menu-link.active {
+  font-weight: 600;
+  transition: 0.6s;
+  background: rgba(238, 75, 43, 1);
+  color: #fff;
+  border-radius: 0.75rem;
+  animation: pulse 2s infinite;
+  box-shadow: 0 0 0 0 rgba(238, 75, 43, 1);
+  font-size: 20px;
 }
 
-.banner-text .sub-title {
-  font-weight: normal;
-  letter-spacing: 0.05rem;
-  margin:0.5rem 0;
-  font-size: 2rem;
-}
-
-@media (max-width:767.98px) {
-  .alphamet-intro {
-    min-height: 500px;
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(238, 75, 43, 0.7);
   }
 
-  .banner-text {
-    top:35%;
-    left:0%;
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(238, 75, 43, 0);
   }
 
-  .banner-text .sub-title {
-    font-size: 1.75rem;
-    text-align: center;
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(238, 75, 43, 0);
   }
-
-  .banner-text .title {
-    text-align: center;
-  }
-
 }
 
-header .alphamet-intro {
-  position: absolute;
-  top:0;
-  right:0;
-  height:100vh;
-  width:100vw;
-  max-height: 500px;
-  object-fit: cover;
+.main-header {
+  background: var(--brand-blue);
+}
+
+.main-header nav {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+}
+
+.main-header .logo-link {
+  width: 100%;
+  display: flex;
+  max-width: 200px;
+}
+
+.main-header .menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 700px;
+}
+
+.main-header .menu-link {
+  color: var(--brand-white);
+  transition: 0.6s;
+  display: flex;
+  text-decoration: none;
+  padding: 0.5rem 1.25rem;
+}
+
+.main-header .menu-link:hover {
+  background: rgba(238, 75, 43, 0.9);
+  border-radius: 1.25rem;
+}
+
+.main-header .menu-link.active:hover {
+  color: var(--brand-white);
+  background: rgba(238, 75, 43, 1);
+  border-radius: 1.25rem;
+  animation: none;
+}
+
+.main-header .menu-link.active {
+  font-weight: 600;
+  transition: 0.6s;
+  background: rgba(238, 75, 43, 1);
+  color: var(--brand-white);
+  border-radius: 0.75rem;
+  animation: pulse 1.75s infinite;
+  box-shadow: 0 0 0 0 rgba(238, 75, 43, 1);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(238, 75, 43, 0.8);
+  }
+
+  50% {
+    transform: scale(1);
+    box-shadow: 0 0 0 15px rgba(238, 75, 43, 0);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(238, 75, 43, 0);
+  }
+}
+
+
+.main-header .contacts-link > svg {
+  margin-right: 0.5rem;
+  width: 20px;
+  height: auto;
+  transition: 0.6s;
 }
 
 .navbar {
@@ -153,9 +176,6 @@ header .alphamet-intro {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  height: 80px;
-  position: sticky;
-  z-index: 5;
 }
 
 .navbar .logo-link {
@@ -181,7 +201,7 @@ header .alphamet-intro {
 .navbar .toggle-button .bar {
   height: 3px;
   width: 100%;
-  background-color: #fff;
+  background-color: var(--brand-white);
   border-radius: 10px;
 }
 
@@ -195,28 +215,21 @@ header .alphamet-intro {
 }
 
 .navbar .menu .menu-link {
-  color: #fff;
+  color: var(--brand-white);
   padding: 1rem;
   display: block;
   transition: 0.6s;
 }
 
-.navbar .menu .menu-link:hover {
-  opacity: 0.7;
-}
-
 .navbar .navbar-links a {
   text-decoration: none;
-  color: #fff;
+  color: var(--brand-white);
   display: flex;
   flex-direction: row;
   align-items: center;
   transition: 0.6s;
 }
 
-.navbar .navbar-links > a:hover {
-  opacity: 0.7;
-}
 
 .navbar .navbar-links > a > svg {
   margin-right: 0.5rem;
@@ -227,20 +240,6 @@ header .alphamet-intro {
   flex-direction: row;
   align-items: center;
 }
-
-.navbar .navbar-links .phones {
-  display: flex;
-  flex-direction: column;
-}
-
-.navbar .navbar-links .phone {
-  margin-right: 1rem;
-}
-
-.navbar .navbar-links .phone:first-child {
-  margin-bottom: 0.5rem;
-}
-
 
 @media (max-width: 480px) {
   .navbar .toggle-button {
