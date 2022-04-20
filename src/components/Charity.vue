@@ -34,7 +34,11 @@
             </div>
           </div>
         </div>
-        <img class="dara-charity-img" src="@/assets/images/dara-bg.jpg" width="100%" alt="charity" title="Dara charity">
+        <picture>
+          <source srcset="src/assets/images/dara-bg.webp" type="image/webp" title="Dara charity children">
+          <img src="@/assets/images/dara-bg.jpg" class="dara-charity-img" width="100%" alt="charity" title="Dara charity children">
+        </picture>
+
       </div>
     </div>
   </section>

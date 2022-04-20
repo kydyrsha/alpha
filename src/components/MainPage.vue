@@ -15,46 +15,68 @@
       <h2 class="engineering-header">Комплексный подход</h2>
       <div class="engineering-wrapper">
         <div class="engineering-block">
-          <img src="@/assets/images/services/sketch.png" alt="sketch-icon">
-          <p>Проектирование (технологическое) нефтехимических производств</p>
+          <img src="@/assets/images/services/sketch.png" alt="sketch-icon"/>
+          <p>Проектирование (технологическое)<br>нефтехимических производств</p>
         </div>
         <div class="engineering-block">
-          <img src="@/assets/images/services/block3.png" alt="paper-icon">
-          <p>Составление технико-экономического обоснования проектов для месторождений углеводородного сырья</p>
+          <img src="@/assets/images/services/block3.png" alt="paper-icon"/>
+          <p>Составление технико-экономического<br>обоснования проектов</p>
         </div>
         <div class="engineering-block">
-          <img src="@/assets/images/services/tubes.png" alt="pipe-icon">
-          <p>Поставка труб различных диаметров и марок стали</p>
+          <img src="@/assets/images/services/tubes.png" alt="pipe-icon"/>
+          <p>Поставка труб различных<br>диаметров и марок стали</p>
         </div>
         <div class="engineering-block">
-          <img src="@/assets/images/services/laboratory.png" alt="lab-icon">
-          <p>Поставка промышленного и технического оборудования</p>
+          <img src="@/assets/images/services/laboratory.png" alt="lab-icon"/>
+          <p>Поставка промышленного<br>и технического оборудования</p>
         </div>
         <div class="engineering-block">
-          <img src="@/assets/images/services/corrosive.png" alt="corrosive-icon">
-          <p>Антикоррозийное покрытие</p>
+          <img src="@/assets/images/services/corrosive.png" alt="corrosive-icon"/>
+          <p>Антикоррозийное<br>покрытие</p>
         </div>
         <div class="engineering-block">
-          <img src="@/assets/images/services/maintenance.png" alt="lab-icon">
-          <p>Строительно-монтажные работы</p>
+          <img src="@/assets/images/services/maintenance.png" alt="lab-icon"/>
+          <p>Строительно-монтажные<br>работы</p>
         </div>
       </div>
     </div>
   </section>
-  <a class="cta" href="tel:+77006055555"><img class="active" src="@/assets/images/ringing.png" alt="phone-icon" title="call"></a>
+  <a class="widget-call" href="tel:+77006055555"><img class="active" src="@/assets/images/ringing.png" alt="phone-icon" title="call"></a>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      // beforeHoverImg: 'src/assets/images/services/sketch.png',
+      // onHoverImg: 'src/assets/images/services/sketch-white.png'
+    }
+  }
+}
+</script>
 
 
 <style scoped>
 
-
-.cta {
+.widget-call {
   position: fixed;
   right: 3%;
   bottom: 5%;
+  z-index: 100;
 }
 
-.cta > img {
+@media (max-width:767.98px) {
+  .widget-call {
+    right:6%;
+    bottom:2%;
+  }
+
+  .widget-call > img {
+    max-width:80px;
+  }
+}
+
+.widget-call > img {
   width:100%;
   max-width:100px;
   background-color: var(--brand-red);
@@ -120,7 +142,9 @@
   height:100vh;
   max-height: 520px;
   object-fit: cover;
+  transition: 0.6s;
 }
+
 
 .banner-text {
   position: absolute;
@@ -166,7 +190,6 @@ section:after {
 }
 
 p {
-  line-height: 1.5rem;
   text-align: center;
 }
 
@@ -222,19 +245,28 @@ p {
 }
 
 .engineering .engineering-wrapper .engineering-block {
-  width:33%;
+  width:50%;
   display:flex;
   align-items: center;
-  flex-direction: column;
+  transition: 0.6s;
+  padding:1rem;
+}
+
+.engineering .engineering-wrapper .engineering-block:hover {
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.4);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.4);
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.4);
+  cursor: pointer;
 }
 
 .engineering .engineering-wrapper .engineering-block > img {
   width:20%;
-  margin-bottom: 1rem;
+  padding:0.25rem;
 }
 
 .engineering .engineering-wrapper .engineering-block > p {
   width:80%;
+  margin:0;
 }
 
 @media (max-width: 767.98px) {
@@ -244,7 +276,7 @@ p {
 
   .engineering .engineering-wrapper .engineering-block {
     width:100%;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   .engineering .engineering-wrapper .engineering-block > img {

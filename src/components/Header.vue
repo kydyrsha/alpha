@@ -2,7 +2,7 @@
   <header class="main-header">
     <nav class="navbar">
       <RouterLink class="logo-link" to="/"><img class="navbar-logo" src="@/assets/images/alphamet-transparent.png"
-                                                alt="logo"></RouterLink>
+                                                alt="logo" title="Alphamet logo"></RouterLink>
       <a href="#" class="toggle-button" @click="toggleMenu">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -59,14 +59,15 @@ header .menu-link.active:hover {
 }
 
 header .menu-link.active {
-  font-weight: 600;
   transition: 0.6s;
   background: rgba(238, 75, 43, 1);
   color: #fff;
   border-radius: 0.75rem;
   animation: pulse 2s infinite;
   box-shadow: 0 0 0 0 rgba(238, 75, 43, 1);
-  font-size: 20px;
+  font-size: 22px;
+  letter-spacing: 1px;
+  font-weight: 300;
 }
 
 @keyframes pulse {
@@ -131,16 +132,6 @@ header .menu-link.active {
   background: rgba(238, 75, 43, 1);
   border-radius: 1.25rem;
   animation: none;
-}
-
-.main-header .menu-link.active {
-  font-weight: 600;
-  transition: 0.6s;
-  background: rgba(238, 75, 43, 1);
-  color: var(--brand-white);
-  border-radius: 0.75rem;
-  animation: pulse 1.75s infinite;
-  box-shadow: 0 0 0 0 rgba(238, 75, 43, 1);
 }
 
 @keyframes pulse {
@@ -216,7 +207,6 @@ header .menu-link.active {
 
 .navbar .menu .menu-link {
   color: var(--brand-white);
-  padding: 1rem;
   display: block;
   transition: 0.6s;
 }
@@ -268,6 +258,7 @@ header .menu-link.active {
 
   .navbar .menu .menu-link {
     padding: 0.5rem 1rem;
+    border-radius: unset;
   }
 
   .navbar .menu.active {

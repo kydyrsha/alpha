@@ -1,5 +1,5 @@
 /* general styles */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -24,17 +24,16 @@ body {
 }
 
 h2 {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 2.25rem;
 }
 
 h3 {
-  font-weight: 600;
+  font-weight: 500;
   font-size:1.75rem;
 }
 
 p {
-  font-size:18px;
   font-weight: 400;
   line-height: 1.65rem;
 }

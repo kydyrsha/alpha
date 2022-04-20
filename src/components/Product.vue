@@ -207,6 +207,7 @@
   display: grid;
   max-width: 100%;
   grid-template-columns: repeat(4, 1fr);
+  color: var(--brand-white);
 }
 
 .products-table-wrapper .table .product-name {
@@ -215,7 +216,7 @@
 
 .products-table-wrapper .table > div {
   margin: 2px;
-  background: powderblue;
+  background: var(--brand-blue);
   padding: 5px;
   line-height: 2rem;
   text-align: center;
