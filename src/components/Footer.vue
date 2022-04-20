@@ -35,9 +35,9 @@ footer {
 }
 
 footer .footer-wrapper {
-  padding:2rem 0;
+  padding:1.5rem 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 footer .footer-wrapper .docs .footer-link {
