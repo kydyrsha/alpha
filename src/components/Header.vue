@@ -1,6 +1,6 @@
 <template>
   <header class="main-header">
-    <nav class="navbar">
+    <nav class="navbar desktop">
       <RouterLink class="logo-link" to="/"><img class="navbar-logo" src="@/assets/images/alphamet-transparent.png"
                                                 alt="logo" title="Alphamet logo"></RouterLink>
       <a href="#" class="toggle-button" @click="toggleMenu">
@@ -15,9 +15,23 @@
         <RouterLink class="menu-link" to="/charity">Благотворительность</RouterLink>
         <RouterLink class="menu-link" to="/contacts">Контакты</RouterLink>
       </ul>
-      <div class="navbar-links">
-        <a class="menu-link active" href="#">перезвоните мне</a>
+      <a class="menu-link active" href="#">перезвоните мне</a>
+    </nav>
+
+    <nav class="navbar mobile">
+      <div class="burger" @click="toggleMenu()">
+        <span></span>
       </div>
+      <RouterLink class="logo-link" to="/"><img class="navbar-logo" src="@/assets/images/alphamet-transparent.png"
+                                                alt="logo" title="Alphamet logo"></RouterLink>
+      <ul class="menu" :class="{'active': isActive}">
+        <RouterLink class="menu-link" to="/">Главная</RouterLink>
+        <RouterLink class="menu-link" to="/about">О нас</RouterLink>
+        <RouterLink class="menu-link" to="/product">Продукция</RouterLink>
+        <RouterLink class="menu-link" to="/charity">Благотворительность</RouterLink>
+        <RouterLink class="menu-link" to="/contacts">Контакты</RouterLink>
+      </ul>
+      <a class="menu-link active" href="#">перезвоните мне</a>
     </nav>
 
   </header>
@@ -38,6 +52,15 @@ export default {
 }
 </script>
 <style scoped>
+.main-header {
+  background: var(--brand-blue);
+  position: fixed;
+  top:0;
+  z-index: 200;
+  width:100%;
+  height: 110px;
+}
+
 header .menu-link {
   color: var(--brand-white);
   transition: 0.6s;
@@ -87,10 +110,6 @@ header .menu-link.active {
   }
 }
 
-.main-header {
-  background: var(--brand-blue);
-}
-
 .main-header nav {
   width: 100%;
   max-width: 1200px;
@@ -104,7 +123,7 @@ header .menu-link.active {
 .main-header .logo-link {
   width: 100%;
   display: flex;
-  max-width: 200px;
+  max-width: 180px;
 }
 
 .main-header .menu {
@@ -169,10 +188,6 @@ header .menu-link.active {
   justify-content: space-between;
 }
 
-.navbar .logo-link {
-  display: flex;
-}
-
 .navbar .navbar-logo {
   width: 100%;
   max-width: 180px;
@@ -231,13 +246,106 @@ header .menu-link.active {
   align-items: center;
 }
 
-@media (max-width: 480px) {
+@media (min-width:1300px) {
+  .navbar.desktop {
+    display:flex;
+  }
+
+  .navbar.mobile {
+    display:none;
+  }
+}
+
+@media (max-width: 1299.98px) {
+
+  .main-header .logo-link {
+    display:none;
+  }
+
+  .navbar.desktop {
+    display:none;
+  }
+
+  .main-header {
+    height:110px;
+  }
+
+  .navbar.mobile {
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    max-width:90%;
+    padding:1.5rem 0;
+    height:100%;
+  }
+
+  .navbar.mobile .burger {
+    z-index: 20;
+    display: block;
+    position: relative;
+    width:35px;
+    height:20px;
+    cursor: pointer;
+  }
+
+  .navbar.mobile .burger > span,
+  .navbar.mobile .burger:before,
+  .navbar.mobile .burger:after {
+    left:0;
+    position: absolute;
+    height: 10%;
+    width:100%;
+    transition: all 0.3s ease 0s;
+    background-color: var(--brand-white);
+  }
+
+  .navbar.mobile .burger:before,
+  .navbar.mobile .burger:after {
+    content: '';
+  }
+
+  .navbar.mobile .burger:before {
+    top:0;
+  }
+
+  .navbar.mobile .burger:after {
+    bottom:0;
+  }
+
+  .navbar.mobile .burger > span {
+    top:50%;
+    transform: scale(1) translate(0px,-50%);
+  }
+
+  .navbar.mobile .menu {
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    transform: translate(-100%,0px);
+    background-color: rgba(0,71,171,1);
+    transition: all 0.3s ease 0s;
+    margin-top: 110px;
+    color: var(--brand-white);
+  }
+
+  .navbar.mobile .menu.active {
+    transform: translate(0px,0px);
+  }
+
+  .main-header .menu {
+    max-width:100%;
+  }
+
+  .main-header nav {
+    padding:0;
+  }
+
   .navbar .toggle-button {
     display: flex;
   }
 
   .navbar .menu {
-    display: none;
     width: 100%;
     flex-direction: column;
   }

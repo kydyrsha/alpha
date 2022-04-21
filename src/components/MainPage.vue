@@ -15,27 +15,27 @@
       <h2 class="engineering-header">Комплексный подход</h2>
       <div class="engineering-wrapper">
         <div class="engineering-block">
-          <img src="@/assets/images/services/sketch.png" alt="sketch-icon"/>
+          <img src="@/assets/images/services/sketch.png" alt="sketch-icon" title="sketch icon"/>
           <p>Проектирование (технологическое)<br>нефтехимических производств</p>
         </div>
         <div class="engineering-block">
-          <img src="@/assets/images/services/block3.png" alt="paper-icon"/>
+          <img src="@/assets/images/services/block3.png" alt="paper-icon" title="paper icon"/>
           <p>Составление технико-экономического<br>обоснования проектов</p>
         </div>
         <div class="engineering-block">
-          <img src="@/assets/images/services/tubes.png" alt="pipe-icon"/>
+          <img src="@/assets/images/services/tubes.png" alt="pipe-icon" title="pipe icon"/>
           <p>Поставка труб различных<br>диаметров и марок стали</p>
         </div>
         <div class="engineering-block">
-          <img src="@/assets/images/services/laboratory.png" alt="lab-icon"/>
+          <img src="@/assets/images/services/laboratory.png" alt="lab-icon" title="lab icon"/>
           <p>Поставка промышленного<br>и технического оборудования</p>
         </div>
         <div class="engineering-block">
-          <img src="@/assets/images/services/corrosive.png" alt="corrosive-icon"/>
+          <img src="@/assets/images/services/corrosive.png" alt="corrosive-icon" title="corrosive icon"/>
           <p>Антикоррозийное<br>покрытие</p>
         </div>
         <div class="engineering-block">
-          <img src="@/assets/images/services/maintenance.png" alt="lab-icon"/>
+          <img src="@/assets/images/services/maintenance.png" alt="lab-icon" title="lab icon"/>
           <p>Строительно-монтажные<br>работы</p>
         </div>
       </div>
@@ -119,6 +119,10 @@ export default {
   overflow: hidden;
 }
 
+.banner-bg {
+  margin-top:110px;
+}
+
 .banner-bg::after {
   content: '';
   position: absolute;
@@ -135,6 +139,7 @@ export default {
 
 .banner-bg > picture {
   width:100%;
+  display: flex;
 }
 
 .banner-bg img {
@@ -199,7 +204,7 @@ p {
   width:100%;
   height:100%;
   max-height: 520px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
   top:0;
   right: 0;
 }
@@ -231,9 +236,9 @@ p {
 
 .engineering .engineering-header {
   text-align: center;
-  padding:2.5rem 0;
   margin:0;
   letter-spacing: 1px;
+  padding:2rem 0;
 }
 
 .engineering .engineering-wrapper {
@@ -260,7 +265,7 @@ p {
 }
 
 .engineering .engineering-wrapper .engineering-block > img {
-  width:20%;
+  width:17%;
   padding:0.25rem;
 }
 
@@ -269,7 +274,7 @@ p {
   margin:0;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 911.98px) {
   .engineering .engineering-wrapper {
     flex-direction: column;
   }
@@ -277,6 +282,7 @@ p {
   .engineering .engineering-wrapper .engineering-block {
     width:100%;
     margin-bottom: 2rem;
+    justify-content: center;
   }
 
   .engineering .engineering-wrapper .engineering-block > img {
