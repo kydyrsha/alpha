@@ -119,9 +119,9 @@ export default {
   overflow: hidden;
 }
 
-.banner-bg {
-  margin-top:110px;
-}
+/*.banner-bg {*/
+/*  margin-top:110px;*/
+/*}*/
 
 .banner-bg::after {
   content: '';

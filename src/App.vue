@@ -7,8 +7,10 @@ import Form from '@/components/Form.vue'
 
 <template>
   <Header/>
-  <RouterView />
-  <Form/>
+  <main>
+    <RouterView />
+    <Form/>
+  </main>
   <Footer/>
 </template>
 
