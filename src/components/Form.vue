@@ -45,9 +45,12 @@ export default {
 <style scoped>
 form {
   margin:2rem auto;
-  display: block;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   width:100%;
-  max-width:650px;
+  max-width:620px;
+  height:400px;
   border: 3px solid var(--brand-blue);
   padding:2rem;
 }

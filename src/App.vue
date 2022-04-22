@@ -9,7 +9,6 @@ import Form from '@/components/Form.vue'
   <Header/>
   <main>
     <RouterView />
-    <Form/>
   </main>
   <Footer/>
 </template>

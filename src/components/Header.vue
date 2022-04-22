@@ -15,7 +15,8 @@
         <RouterLink class="menu-link" to="/charity">Благотворительность</RouterLink>
         <RouterLink class="menu-link" to="/contacts">Контакты</RouterLink>
       </ul>
-      <a class="menu-link active" href="#">перезвоните мне</a>
+<!--      <a class="menu-link active" href="#">перезвоните мне</a>-->
+      <RouterLink class="menu-link active" to="/">перезвоните мне</RouterLink>
     </nav>
 
     <nav class="navbar mobile">
@@ -31,7 +32,8 @@
         <RouterLink class="menu-link" to="/charity">Благотворительность</RouterLink>
         <RouterLink class="menu-link" to="/contacts">Контакты</RouterLink>
       </ul>
-      <a class="menu-link active" href="#">перезвоните мне</a>
+<!--      <a class="menu-link active" href="#">перезвоните мне</a>-->
+      <RouterLink class="menu-link active" to="/">перезвоните мне</RouterLink>
     </nav>
 
   </header>

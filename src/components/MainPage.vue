@@ -41,6 +41,7 @@
       </div>
     </div>
   </section>
+  <Form/>
   <a class="widget-call" href="tel:+77006055555"><img class="active" src="@/assets/images/ringing.png" alt="phone-icon" title="call"></a>
 </template>
 
