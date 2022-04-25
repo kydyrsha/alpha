@@ -41,71 +41,28 @@
       </div>
     </div>
   </section>
-  <Form/>
-  <a class="widget-call" href="tel:+77006055555"><img class="active" src="@/assets/images/ringing.png" alt="phone-icon" title="call"></a>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      // beforeHoverImg: 'src/assets/images/services/sketch.png',
-      // onHoverImg: 'src/assets/images/services/sketch-white.png'
-    }
-  }
-}
+// export default {
+//   data() {
+//     return {
+//       isShow: false
+//     }
+//   },
+//   methods: {
+//     openForm() {
+//       console.log(212121)
+//       event.preventDefault()
+//       this.isShow = !this.isShow
+//       console.log(this.isShow)
+//     }
+//   }
+// }
 </script>
 
 
 <style scoped>
-
-.widget-call {
-  position: fixed;
-  right: 3%;
-  bottom: 5%;
-  z-index: 100;
-}
-
-@media (max-width:767.98px) {
-  .widget-call {
-    right:6%;
-    bottom:2%;
-  }
-
-  .widget-call > img {
-    max-width:80px;
-  }
-}
-
-.widget-call > img {
-  width:100%;
-  max-width:100px;
-  background-color: var(--brand-red);
-  border-radius: 50%;
-  padding:1rem;
-  animation: ringing;
-  animation-duration: 2.25s;
-  animation-iteration-count: infinite;
-  transition: 0.7s;
-}
-
-@keyframes ringing {
-  0% {
-    transform: rotate(-60deg);
-    box-shadow: 0 0 0 0 rgba(238, 75, 43, 0.8);
-  }
-
-  50% {
-    transform: rotate(-20deg);
-    box-shadow: 0 0 0 15px rgba(238, 75, 43, 0);
-  }
-
-  100% {
-    transform: rotate(20deg);
-    box-shadow: 0 0 0 0 rgba(238, 75, 43, 0);
-  }
-
-}
 
 .visually-hidden {
   position: absolute;
@@ -120,9 +77,6 @@ export default {
   overflow: hidden;
 }
 
-/*.banner-bg {*/
-/*  margin-top:110px;*/
-/*}*/
 
 .banner-bg::after {
   content: '';
@@ -136,7 +90,6 @@ export default {
   z-index: 3;
   background: unset;
 }
-
 
 .banner-bg > picture {
   width:100%;
@@ -262,7 +215,6 @@ p {
   -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.4);
   -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.4);
   box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.4);
-  cursor: pointer;
 }
 
 .engineering .engineering-wrapper .engineering-block > img {

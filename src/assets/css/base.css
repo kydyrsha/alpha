@@ -10,6 +10,7 @@ html {
   --brand-red:#EE4B2B;
   --brand-black:#292630;
   --brand-white:#f6f5fa;
+  --pure-white:#fff;
 }
 
 * {
@@ -63,9 +64,14 @@ section {
   position: relative;
 }
 
+.form-wrapper.show {
+  display:block;
+}
+
 
 @media (max-width:767.98px) {
   .container {
     padding:0 15px;
   }
 }
+

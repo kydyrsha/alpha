@@ -15,8 +15,7 @@
         <RouterLink class="menu-link" to="/charity">Благотворительность</RouterLink>
         <RouterLink class="menu-link" to="/contacts">Контакты</RouterLink>
       </ul>
-<!--      <a class="menu-link active" href="#">перезвоните мне</a>-->
-      <RouterLink class="menu-link active" to="/">перезвоните мне</RouterLink>
+      <a href="tel:+77006055555" class="menu-link active">позвонить</a>
     </nav>
 
     <nav class="navbar mobile">
@@ -32,8 +31,7 @@
         <RouterLink class="menu-link" to="/charity">Благотворительность</RouterLink>
         <RouterLink class="menu-link" to="/contacts">Контакты</RouterLink>
       </ul>
-<!--      <a class="menu-link active" href="#">перезвоните мне</a>-->
-      <RouterLink class="menu-link active" to="/">перезвоните мне</RouterLink>
+      <a href="tel:+77006055555" class="menu-link active">позвонить</a>
     </nav>
 
   </header>
@@ -58,7 +56,7 @@ export default {
   background: var(--brand-blue);
   position: fixed;
   top:0;
-  z-index: 200;
+  z-index: 80;
   width:100%;
   height: 110px;
 }
@@ -88,9 +86,8 @@ header .menu-link.active {
   background: rgba(238, 75, 43, 1);
   color: #fff;
   border-radius: 0.75rem;
-  animation: pulse 2s infinite;
+  /*animation: pulse 2s infinite;*/
   box-shadow: 0 0 0 0 rgba(238, 75, 43, 1);
-  font-size: 22px;
   letter-spacing: 1px;
   font-weight: 300;
 }
