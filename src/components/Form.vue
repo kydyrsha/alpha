@@ -1,13 +1,13 @@
 <template>
-  <article>
+  <article class="form-wrapper">
     <form action="" method="post" @submit="onSubmit">
       <div class="form-block name">
-        <label for="name">Имя</label>
+        <label for="name">Имя:</label>
         <input v-model="name" type="text" id="name" name="user_name" placeholder="Введите ваше имя" />
       </div>
       <div class="form-block phone">
         <label for="phone">Ваш телефон:</label>
-        <input v-model="phone" type="phone" id="phone" name="user_phone" placeholder="+7(___)___-__-__"/>
+        <input v-maska="['+7 (###) ##-##-##', '+7 (###) ###-##-##']" v-model="phone" type="phone" id="phone" name="user_phone" placeholder="+7(___)___-__-__" >
       </div>
       <input type="submit" value="Заказать звонок"><br>
       <a class="accept" href="#">Нажимая кнопку “Заказать звонок”, вы принимаете <RouterLink class="special" to="/docs">условия обработки персональных данных</RouterLink></a>
@@ -43,44 +43,61 @@ export default {
 </script>
 
 <style scoped>
-form {
+
+.form-wrapper {
+  background: rgba(0,0,0,0.6);
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.form-wrapper form {
   margin:2rem auto;
   display: flex;
   justify-content: center;
   flex-direction: column;
   width:100%;
-  max-width:620px;
-  height:400px;
+  max-width:700px;
+  height:500px;
   border: 3px solid var(--brand-blue);
   padding:2rem;
+  background-color: var(--brand-white);
 }
 
-form .form-block {
+.form-wrapper form .form-block {
   display: flex;
   flex-direction: column;
   margin-bottom: 1.5rem;
 }
 
-form .form-block > input {
+.form-wrapper form .form-block > input {
   width:100%;
   padding:0.5rem;
 }
 
-form .form-block > input:focus {
+.form-wrapper form .form-block > input:focus {
   outline: none;
 }
 
 
-form .form-block > label {
+.form-wrapper form .form-block > label {
   margin-bottom: 0.25rem;
 }
 
-form .accept {
+.form-wrapper form .accept {
   font-size:0.7rem;
   color: var(--brand-black);
 }
 
-form .accept .special {
+.form-wrapper form .accept .special {
   color:var(--brand-blue);
   font-weight: bold;
 }

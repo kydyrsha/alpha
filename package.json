@@ -7,9 +7,12 @@
     "preview": "vite preview --port 5050"
   },
   "dependencies": {
+    "maska": "^1.5.0",
     "timeline-vuejs": "^1.1.7",
     "vue": "^3.2.31",
     "vue-cli-plugin-sitemap": "^2.3.0",
+    "vue-masked-input": "^0.5.2",
+    "vue-phone-mask-input": "^1.1.11",
     "vue-router": "^4.0.12"
   },
   "devDependencies": {
