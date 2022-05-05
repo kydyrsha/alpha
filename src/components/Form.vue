@@ -1,7 +1,7 @@
 <template>
-  <article class="form-wrapper" :class="{'show': isShow}">
+  <article class="form-wrapper">
     <form action="" method="post" @submit="onSubmit">
-      <span class="close-form" @click="closeForm()"><img src="@/assets/images/close.png" alt="close-icon" title="close icon"/></span>
+      <span class="close-form" @click="toggleForm()"><img src="@/assets/images/close.png" alt="close-icon" title="close icon"/></span>
       <div class="form-block name">
         <label for="name">Имя:</label>
         <input v-model="name" type="text" id="name" name="user_name" placeholder="Введите ваше имя" />
@@ -37,7 +37,7 @@ export default {
         })
       })
       let jsonData = await response.json()
-      console.log(jsonData)
+      // console.log(jsonData)
     }
   }
 }

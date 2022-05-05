@@ -1,9 +1,9 @@
 <template>
   <section>
     <div class="container">
+      <h2 class="contacts-title">Контакты:</h2>
       <div class="contacts-wrapper">
         <address class="contacts">
-          <h2>Контакты:</h2>
           <p>Республика Казахстан, город Алматы, Зеина Шашкина, 9Б</p>
           <div class="navbar-links">
             <a class="phone" href="tel:+77273470224">
@@ -21,8 +21,7 @@
           </div>
         </address>
         <div class="map-wrapper">
-          <h2 style="opacity:0;">Как к нам добраться?</h2>
-          <div id="map" style="width:800px; height:600px"></div>
+          <iframe frameborder="no" style="border: 1px solid #a3a3a3; box-sizing: border-box;" width="640" height="600" src="http://widgets.2gis.com/widget?type=firmsonmap&amp;options=%7B%22pos%22%3A%7B%22lat%22%3A43.22201%2C%22lon%22%3A76.930637%2C%22zoom%22%3A16%7D%2C%22opt%22%3A%7B%22city%22%3A%22almaty%22%7D%2C%22org%22%3A%2270000001060448944%22%7D"></iframe>
         </div>
       </div>
     </div>
@@ -30,24 +29,18 @@
 </template>
 
 <script>
-var map;
-
-DG.then(function () {
-  map = DG.map('map', {
-    center: [54.98, 82.89],
-    zoom: 13,
-    animate: true
-  });
-});
 
 </script>
 <style scoped>
 
-#map {
-  width:800px;
-  height:600px;
+.map-wrapper {
+  position: relative;
 }
 
+.map-wrapper > iframe {
+  width:100%;
+  max-width:90%;
+}
 
 .navbar-links > a {
   text-decoration: none;
@@ -69,14 +62,11 @@ DG.then(function () {
 
 .contacts-wrapper {
   display:flex;
+  justify-content: space-between;
 }
 
 .contacts-wrapper .map-wrapper {
-  width:70%;
-}
-
-.contacts-wrapper .map-wrapper #map {
-  margin-bottom: 1rem;
+  width:65%;
 }
 
 .contacts-wrapper .contacts {
@@ -95,14 +85,6 @@ DG.then(function () {
 
   .contacts-wrapper .map-wrapper {
     width:100%;
-  }
-
-  .contacts-wrapper .map-wrapper > h2 {
-    display:none;
-  }
-
-  .contacts-wrapper .map-wrapper #map {
-    width:100% !important;
   }
 
 }

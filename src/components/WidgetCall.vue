@@ -1,18 +1,18 @@
 <template>
-  <div class="widget-wrapper">
+  <article class="widget-wrapper">
     <a class="widget-call" href="#" @click="toggleForm()"><img class="active" src="@/assets/images/ringing.png" alt="phone-icon" title="call"></a>
-  </div>
+  </article>
 </template>
 
 <script>
-// export default {
-//   methods: {
-//     toggleForm() {
-//       event.preventDefault()
-//       this.isShow = !this.isShow
-//     }
-//   }
-// }
+export default {
+  methods: {
+    toggleForm() {
+      event.preventDefault()
+      this.isShow = !this.isShow
+    }
+  }
+}
 </script>
 
 <style scoped>

@@ -22,15 +22,5 @@ import Form from '@/components/Form.vue'
 </style>
 
 <script>
-export default {
-  props: ['isShow'],
-  methods: {
-    toggleForm() {
-      console.log(21212)
-      event.preventDefault()
-      this.isShow = !this.isShow
-      console.log(this.isShow)
-    }
-  }
-}
+
 </script>

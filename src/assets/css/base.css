@@ -62,6 +62,11 @@ a {
 
 section {
   position: relative;
+  display: flex;
+}
+
+article {
+  display: flex;
 }
 
 .form-wrapper.show {
